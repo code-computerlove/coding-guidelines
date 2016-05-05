@@ -17,7 +17,6 @@ console.log(window.foo); // globalVar
 console.log(scopedVar); // undefined
 ```
 
-
 ## Strict Mode
 Always use [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode). ES2015 deprecates the use of non-strict mode.
 ```javascript
@@ -30,4 +29,29 @@ Always use [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 Use single quotes, eg:
 ```javascript
 var foo = 'bar';
+```
+
+## Naming functions
+Always name functions. Every function should be named as if there is an error, this name will shown in the browser console. Naming over using anonymous functions in loops or callbacks also allows for re-use of functions.
+```javascript
+// bad
+foo.each(function (element) {
+	//do stuff
+});
+
+// good
+function namedFunction (param) {
+	// do stuff
+}
+
+foo.each(namedFunction);
+
+// can also now re-use this function
+namedFunction(param);
+
+// good 
+foo.each(function namedFunction (element) {
+	// do stuff
+});
+
 ```
