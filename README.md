@@ -1,6 +1,17 @@
 # coding-guidelines
 Code's coding guidelines to consistent development
 
+## DOM Selectors
+Use data attributes instead of other selectors when querying the DOM. This is because you will have less brittle code.
+
+```javascript
+// bad 
+var foo = document.querySelectorAll('.foo');
+
+// good
+var foo = document.querySelectorAll('[data-foo]');
+```
+
 ## Variables
 Use camelCase for variables and UPPER_CASE for constants. Define variables at top of scope with one variable per line.
 
