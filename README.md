@@ -55,3 +55,25 @@ foo.each(function namedFunction (element) {
 });
 
 ```
+
+## Equality
+
+You should always use `===` when checking equality of two values. If using `==` the type of the values are coerced which can result in unexpected results.
+
+```js
+1 == true // true
+1 === true // false
+```
+When explicitly looking for the state of a variable use `typeof` rather than `==`. For example to determine if a variable has had a value set yet use:
+
+```js
+// bad
+if(foo) {
+  // do stuff
+}
+
+// good
+if(typeof foo !== 'undefined') {
+  // do stuff
+}
+```
