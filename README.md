@@ -1,6 +1,28 @@
 # coding-guidelines
 Code's coding guidelines to consistent development
 
+## Variables
+Use camelCase for variables and UPPER_CASE for constants. Define variables at top of scope with one variable per line.
+
+```javascript
+// bad
+var foo, bar, baz;
+
+foo = foo + 1;
+
+var myMateJez = 'something';
+
+// good
+var foo = 'This may change';
+var BAR = 'This is intended to be constant';
+```
+
+Variables containing a jQuery object should start with a dollar($)
+
+```javascript
+var $foo = $('.foo');
+```
+
 ## Closures
 Use them. This stops you polluting the global scope by having scoped variables and functions. 
 
