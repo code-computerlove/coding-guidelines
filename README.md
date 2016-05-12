@@ -1,6 +1,14 @@
 # coding-guidelines
 Code's coding guidelines to consistent development
 
+## Inheritance vs Composition
+
+Avoid using inheritance, prefer composition.
+
+In classic OO you should prefer composition over inheritance. However, since JavaScript employs delegation over Object-orientation language, this is more of an anti-pattern. If in doubt, avoid this.
+
+> @TODO add an example link
+
 ## DOM Selectors
 Use data attributes instead of other selectors when querying the DOM. This is because you will have less brittle code.
 
