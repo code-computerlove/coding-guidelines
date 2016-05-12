@@ -127,3 +127,8 @@ The default testing frameworks that should be used:
 * [Chai](http://chaijs.com/) as assertion, BDD
 * [Karma](https://karma-runner.github.io/0.13/index.html) allows to run the above in a browser context.
 * [Sinon](http://sinonjs.org/) Mocking framework
+
+### Versioning
+
+* Read up and use [SemVer](http://semver.org/)
+* Ensure project dependencies are `.npmshrinkwrap`
