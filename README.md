@@ -121,7 +121,7 @@ if(typeof foo !== 'undefined') {
 
 ### Testing
 
-The default testing frameworks are:
+The default testing frameworks that should be used:
 
 * [Mocha](https://mochajs.org/) as the test runner
 * [Chai](http://chaijs.com/) as assertion, BDD
