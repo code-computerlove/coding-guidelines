@@ -8,6 +8,10 @@
 	},
 	"extends": "eslint:recommended",
 	"rules": {
-		"semi": 2
+		"eqeqeq":     "error",
+		"strict":     "error",
+		"camelcase":  "error",
+		"func-names": ["error", "always"],
+		"quotes":     ["error", "single"]
 	}
 }
