@@ -131,6 +131,29 @@ var names = ['bob', 'james',]; //hanging comma at end
 var names = ['bob', 'james']; // no hanging comma at the end
 ```
 
+### Quoted Object keys
+
+Outside of JSON, object keys should not be quoted. Only in specific cases where they are required by the JS parser should they be used.
+
+```js
+// bad
+var person = {
+   'name': 'Tim',
+   'age': 26
+}
+
+// good
+var person = {
+   name: 'Tim',
+   age: 26
+}
+
+// required
+var cssProperties = {
+   'word-wrap': 'break-word'
+}
+```
+
 ### Testing
 
 The default testing frameworks that should be used:
