@@ -119,6 +119,18 @@ if(typeof foo !== 'undefined') {
 }
 ```
 
+### Hanging Commas
+
+Hanging commas should not be used for object, array etc. There should be no `,` on the last element / key of an array or object.
+
+```js
+// bad
+var names = ['bob', 'james',]; //hanging comma at end
+
+// good
+var names = ['bob', 'james']; // no hanging comma at the end
+```
+
 ### Testing
 
 The default testing frameworks that should be used:
